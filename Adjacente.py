@@ -1,6 +1,5 @@
 from Vertice import arad, zerind, oradea, sibiu, timisoara, lugoj, mehadia, dobreta, craiova, rimnicu, fagaras, pitesti, bucharest, giurgiu, urzioeni, neamt, iasi, vaslui, hirasova, eforie
 
-
 class Adjacente:
   def __init__(self, vertice, peso):
     self.vertice = vertice
@@ -44,7 +43,7 @@ craiova.adicionar_adjacente(Adjacente(pitesti, 138))
 craiova.adicionar_adjacente(Adjacente(rimnicu, 146))
 
 # Rimnicu
-rimnicu.adiconar_adjacente(Adjacente(craiova, 146))
+rimnicu.adicionar_adjacente(Adjacente(craiova, 146))
 rimnicu.adicionar_adjacente(Adjacente(sibiu, 80))
 rimnicu.adicionar_adjacente(Adjacente(pitesti, 97))
 

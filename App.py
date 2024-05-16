@@ -1,24 +1,33 @@
-from Graph import graph
+from Grafo import grafo
 
-from Adjacente import Adjacent
+from Adjacente import Adjacente
 
 from Vertice import arad, zerind, oradea, sibiu, timisoara, lugoj, mehadia, dobreta, craiova, rimnicu, fagaras, pitesti, bucharest, giurgiu, urzioeni, neamt, iasi, vaslui, hirasova, eforie
 
 
-def showGraphAdjacents(graph):
-    print('**************************************************************************************************')
-    print('Mostrandos os adjacentes de cada vértice do Grafo:')
-    print('')
-    for vertex in graph.vertices:
-        print(f"Adjacentes de {vertex.label}:")
-        vertex.show_adjacents()
-        print('')
-    print('**************************************************************************************************')
+arad.mostrar_adjacentes()
+zerind.mostrar_adjacentes()
+oradea.mostrar_adjacentes()
+sibiu.mostrar_adjacentes()
+timisoara.mostrar_adjacentes()
+lugoj.mostrar_adjacentes()
+mehadia.mostrar_adjacentes()
+dobreta.mostrar_adjacentes()
+craiova.mostrar_adjacentes()
+rimnicu.mostrar_adjacentes()
+fagaras.mostrar_adjacentes()
+pitesti.mostrar_adjacentes()
+bucharest.mostrar_adjacentes()
+giurgiu.mostrar_adjacentes()
+urzioeni.mostrar_adjacentes()
+neamt.mostrar_adjacentes()
+iasi.mostrar_adjacentes()
+vaslui.mostrar_adjacentes()
+hirasova.mostrar_adjacentes()
+eforie.mostrar_adjacentes()
 
-showGraphAdjacents(graph)
+distancias, caminho = grafo.algoritmo_de_dijkstra(arad)
 
-distances, path = graph.dijkstra(arad)
+melhor_caminho_de_arad_ate_bucherest = grafo.melhor_caminho(arad, bucharest, caminho, distancias[bucharest])
 
-the_best_route_from_arad_to_bucharest = graph.shortest_path(arad, bucharest, path, distances[bucharest])
-
-print(the_best_route_from_arad_to_bucharest)
+print(melhor_caminho_de_arad_ate_bucherest)
