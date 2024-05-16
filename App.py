@@ -1,8 +1,8 @@
 from Graph import graph
 
-from Adjacent import Adjacent
+from Adjacente import Adjacent
 
-from Vertex import arad, zerind, oradea, sibiu, timisoara, lugoj, mehadia, dobreta, craiova, rimnicu, fagaras, pitesti, bucharest, giurgiu, urzioeni, neamt, iasi, vaslui, hirasova, eforie
+from Vertice import arad, zerind, oradea, sibiu, timisoara, lugoj, mehadia, dobreta, craiova, rimnicu, fagaras, pitesti, bucharest, giurgiu, urzioeni, neamt, iasi, vaslui, hirasova, eforie
 
 
 def showGraphAdjacents(graph):
